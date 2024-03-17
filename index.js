@@ -23,7 +23,7 @@ app.use(todoRoutes)
 
 async function start() {
     try {
-        await mongoose.connect('mongodb+srv://sonya:143143@cluster0.pahwmns.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0', { //connect to db
+        await mongoose.connect('', { //paste the needed stuff to connect to db
             useNewUrlParcer: true,
             useFindAndModify: false
         })
