@@ -1,0 +1,20 @@
+ <nav class="orange darken-4">
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo" style="padding-left: 50px;">To-dos</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+        {{#if isIndex}}
+        <li class="active"><a href="/">My to-dos</a></li>
+        {{else}}
+        <li><a href="/">My to-dos</a></li>
+        {{/if}}
+
+        {{#if isCreate}}
+        <li class="active"><a href="/create">Add new</a></li>
+        {{else}}
+        <li><a href="/create">Add new</a></li>
+        {{/if}}
+
+      </ul>
+    </div>
+  </nav>
